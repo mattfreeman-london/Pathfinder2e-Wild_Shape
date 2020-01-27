@@ -1,15 +1,24 @@
 $(document).ready(function() {
   var characterLevel = new CharacterLevel();
-  $('#character-level').text(characterLevel.level);
+  updateLevel();
 
-  $('#level-up').on('click', function() { // event listener
-    characterLevel.levelUp(); // update model
-    $('#character-level').text(characterLevel.level); // update view
+  $('#level-up').on('click', function() {
+    characterLevel.levelUp();
+    updateLevel();
   })
 
   $('#level-down').on('click', function() {
     characterLevel.levelDown();
-    $('#character-level').text(characterLevel.level);
+    updateLevel();
   })
+
+  $('#level-reset').on('click', function() {
+    characterLevel.reset();
+    updateLevel();
+  });
+
+  function updateLevel() {
+    $('#character-level').text(characterLevel.level);
+  };
 
 })
