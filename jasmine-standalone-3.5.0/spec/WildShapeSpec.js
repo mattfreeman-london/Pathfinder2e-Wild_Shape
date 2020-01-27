@@ -14,4 +14,15 @@ describe('wildShape', function() {
     wildShape.levelUp();
     expect(wildShape.getCurrentLevel()).toEqual(2);
   })
+
+  it('decreases in level with levelDown', function() {
+    wildShape.levelUp();
+    wildShape.levelDown();
+    expect(wildShape.getCurrentLevel()).toEqual(1);
+  })
+
+  it('has a minimum level of 1', function() {
+    wildShape.levelDown();
+    expect(wildShape.getCurrentLevel()).toEqual(1);
+  })
 });
