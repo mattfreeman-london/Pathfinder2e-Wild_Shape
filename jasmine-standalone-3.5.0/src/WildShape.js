@@ -7,4 +7,7 @@ class WildShape {
   getCurrentLevel() {
     return this.level;
   }
+  levelUp() {
+    this.level += 1
+  }
 }
