@@ -32,4 +32,12 @@ describe('characterLevel', function() {
     }
     expect(characterLevel.getCurrentLevel()).toEqual(20);
   })
+
+  it('can be reset to the default value of 1', function() {
+    for (var i = 0; i < 5; i++) {
+    characterLevel.levelUp();
+    }
+    characterLevel.reset();
+    expect(characterLevel.getCurrentLevel()).toEqual(1);
+  })
 });

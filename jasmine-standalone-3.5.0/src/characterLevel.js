@@ -5,6 +5,7 @@ class CharacterLevel {
     this.MINIMUM_LEVEL = 1;
     this.MAXIMUM_LEVEL = 20;
     this.level = 1;
+    this.DEFAULT_LEVEL = 1;
   };
 
   getCurrentLevel() {
@@ -32,4 +33,8 @@ class CharacterLevel {
   isMaximumLevel() {
     return this.level === this.MAXIMUM_LEVEL;
   };
+
+  reset() {
+    this.level = this.DEFAULT_LEVEL;
+  }
 }
