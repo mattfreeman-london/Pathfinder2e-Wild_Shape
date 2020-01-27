@@ -1,16 +1,15 @@
 $(document).ready(function() {
   var characterLevel = new CharacterLevel();
   $('#character-level').text(characterLevel.level);
-})
 
+  $('#level-up').on('click', function() { // event listener
+    characterLevel.levelUp(); // update model
+    $('#character-level').text(characterLevel.level); // update view
+  })
 
-$(document).ready(function() {
-  var strengthModifier = new StrengthModifier();
-  $('#strength-modifier').text(strengthModifier.modifier);
-})
+  $('#level-down').on('click', function() {
+    characterLevel.levelDown();
+    $('#character-level').text(characterLevel.level);
+  })
 
-
-$(document).ready(function() {
-  var constitutionModifier = new ConstitutionModifier();
-  $('#constitution-modifier').text(constitutionModifier.modifier);
 })
