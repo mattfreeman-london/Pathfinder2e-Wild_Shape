@@ -7,6 +7,6 @@ describe('wildShape', function() {
   });
 
   it('starts at level 1', function() {
-    expect(wildShape.level).toEqual(1);
+    expect(wildShape.getCurrentLevel()).toEqual(1);
   });
 });
