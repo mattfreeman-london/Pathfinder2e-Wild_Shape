@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-<script src="js/jquery.min.js"></script>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Wild Shape Helper</title>
   </head>
   <body>
     <section>
+      Character Level:
       <h1 id="character-level"></h1>
       <p>
         <button id="level-up">+</button>
         <button id="level-down">-</button>
         <button id="level-reset">reset</button>
       </p>
+      Strength modifier:
       <h1 id="strength-modifier"></h1>
       <p>
         <button id="strength-up">+</button>
         <button id="strength-down">-</button>
         <button id="strength-reset">reset</button>
       </p>
+      Constitution modifier:
       <h1 id="constitution-modifier"></h1>
       <p>
         <button id="constitution-up">+</button>
@@ -28,5 +31,6 @@
     <script src="src/characterLevel.js"></script>
     <script src="src/strengthModifier.js"></script>
     <script src="src/constitutionModifier.js"></script>
+    <script src="interface.js"></script>
   </body>
 </html>
