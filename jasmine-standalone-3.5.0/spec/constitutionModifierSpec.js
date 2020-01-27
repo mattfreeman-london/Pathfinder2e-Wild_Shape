@@ -3,7 +3,7 @@
 describe('constitutionModifier', function() {
   var constitutionModifier;
   beforeEach(function() {
-    constitutionModifier = new constitutionModifier();
+    constitutionModifier = new ConstitutionModifier();
   });
 
   it('starts at 0', function() {
