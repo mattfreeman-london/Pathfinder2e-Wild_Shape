@@ -72,3 +72,23 @@ $(document).ready(function() {
   };
 
 })
+
+$(document).ready(function() {
+  let training = new Training();
+  updateModifier();
+
+  $('#rank-up').on('click', function() {
+    training.rankUp();
+    updateModifier();
+  });
+
+  $('#rank-down').on('click', function() {
+    training.rankDown();
+    updateModifier();
+  });
+
+  function updateModifier() {
+    $('#training').text(training.modifier);
+  };
+
+})
