@@ -91,4 +91,14 @@ $(document).ready(function() {
     $('#training').text(training.modifier);
   };
 
+});
+
+$(document).ready(function() {
+  let basicUnarmedAttack = new BasicUnarmedAttack();
+  updateModifier();
+
+  function updateModifier() {
+    $('#basic-unarmed-attack').text(basicUnarmedAttack.score);
+  };
+
 })
