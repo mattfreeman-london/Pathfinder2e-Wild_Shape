@@ -6,3 +6,5 @@ An online resource to help with the stats adjustments when using Wild Shape in P
 - Testing: Jasmine
 
 Created under the [Open Game License](https://paizo.com/pathfinder/compatibility/ogl) as it pertains to Pathfinder 2e. 
+
+I'm interested in getting help from other developers to finish this. 
